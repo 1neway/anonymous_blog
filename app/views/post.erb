@@ -1,0 +1,13 @@
+<h3> <%= @post.title %> </h3>
+  <h4> <%= @post.author %> </h4>
+    <p> <%= @post.content %> </p>
+     <% @post.tags.each do |tag| %> 
+      <p><a href="/tags/<%= tag.name %>"><%= tag.name %></a></p>
+      <% end %>
+
+      <nav>
+        <ul>
+          <li><a href="/posts/<%= @post.id %>/edit">Edit</a></li>
+          <li><a href="/delete/<%= @post.id %>">Delete</a></li>
+        </ul>
+      </nav>

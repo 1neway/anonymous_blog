@@ -15,9 +15,21 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
-  <title></title>
+  <title>Blog So Hard</title>
 </head>
 <body>
-  <%= yield %>
+  <div class="container">
+    <header>
+      <h1>Blog So Hard</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/posts">Archives</a></li>
+          <li><a href="/new">Create Post</a></li>
+        </ul>
+      </nav>
+    </header>
+    <%= yield %>
+  </div>
 </body>
 </html>

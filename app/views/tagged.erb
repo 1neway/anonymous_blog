@@ -1,8 +1,9 @@
+<h1><%= @tag %></h1>
 <section class="posts">
   <% @posts.each do |post| %>
     <article>
       <header>
-        <h1><a href="posts/<%= post.id %>"><%= post.title %></a></h1>
+        <h1><a href="/posts/<%= post.id %>"><%= post.title %></a></h1>
       </header>
       <p>
         <%= post.content %>
@@ -10,3 +11,6 @@
     </article>
   <% end %>
 </section>
+
+
+
